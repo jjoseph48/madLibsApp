@@ -14,6 +14,7 @@ let originalStory = `Seorang laki-laki melihat ${userInputs[x]} besar yang terje
 console.log(originalStory);
 
 let userInput = [];
+let numberOfQuestion = 8;
 
 
 
