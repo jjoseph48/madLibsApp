@@ -13,30 +13,30 @@ for (let i = numberOfQuestion; i >= 0; i--){
     console.log(
         questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)
         );
-        userInputs.push(
-            prompt(
-                questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)
-            )
-        );
-        console.log(userInputs);
-        questionCounter++;
-        numberOfQuestion--;
+    userInputs.push(
+        prompt(
+            questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)
+        )
+    );
+    console.log(userInputs);
+    questionCounter++;
+    numberOfQuestion--;
 }
         
 
-let originalStory = `Seorang laki-laki melihat ${userInputs[x]} besar yang terjepit batu. Ular itu tidak bisa melepaskan badannya. 
-    Laki-laki itu lalu ${userInputs[x]} batunya agar ular bisa melepaskan diri. Setelah batu diangkat, ular Iangsung melilit tubuh 
+let originalStory = `Seorang laki-laki melihat ${userInputs[0]} besar yang terjepit batu. Ular itu tidak bisa melepaskan badannya. 
+    Laki-laki itu lalu ${userInputs[1]} batunya agar ular bisa melepaskan diri. Setelah batu diangkat, ular Iangsung melilit tubuh 
     laki-laki itu hendak memangsanya. “Tunggu! Mengapa kau lakukan itu? Bukankah aku telah menolongmu?” kata si Laki-laki.
     “Aku lapar dan tidak ada salahnya aku memangsamu,” kata ular yang tak tahu membalas budi.“Kau jangan makan aku sekarang. 
-    Kita tanyakan dulu ${userInputs[x]} kita pada binatang yang bijaksana,” kata si laki-laki kepada ular. Lalu, mereka berjalan dan 
-    bertemu ${userInputs[x]}.“Apakah pantas ular ingin memangsaku? Padahal, aku sudah melepaskannya dari impitan batu,” tanya si laki-laki 
+    Kita tanyakan dulu ${userInputs[2]} kita pada binatang yang bijaksana,” kata si laki-laki kepada ular. Lalu, mereka berjalan dan 
+    bertemu ${userInputs[3]}.“Apakah pantas ular ingin memangsaku? Padahal, aku sudah melepaskannya dari impitan batu,” tanya si laki-laki 
     kepada hyena. Hyena berpikir, jika memihak ular, ia bisa ikut menikmati daging laki-laki itu. Hyena pun menjawab, “Tidak ada salahnya.”
-    Mendengar jawaban hyena, ular hendak ${userInputs[x]} si laki-laki. Tiba-tiba, laki-laki itu berkata, “Tunggu dulu, kita tanya pada 
-    binatang yang lain.” Mereka lalu bertemu ${userInputs[x]}. “Apakah pantas Ular ingin memangsaku? Padahal, aku sudah meIepaskannya dari impitan 
+    Mendengar jawaban hyena, ular hendak ${userInputs[4]} si laki-laki. Tiba-tiba, laki-laki itu berkata, “Tunggu dulu, kita tanya pada 
+    binatang yang lain.” Mereka lalu bertemu ${userInputs[5]}. “Apakah pantas Ular ingin memangsaku? Padahal, aku sudah meIepaskannya dari impitan 
     batu,” tanya si laki-laki kepada serigala.Serigala menjawab, “Aku tidak percaya seekor ular bisa terimpit batu. Coba kau tunjukkan 
     aku bagaimana kejadiannya.” Mereka bertiga pergi ke tempat semula. Serigala berkata, “Coba kau kembali ke tempatmu.” Ular kembali ke 
-    tempatnya. Lalu, si laki-laki ${userInputs[x]} ular dengan batu. Ternyata benar, ular terlihat tidak bisa melepaskan dirinya. Si laki-laki 
-    hendak melepaskan ular kembali. “Jangan ${userInputs[x]}!” kata serigala. “Ular itu akan memangsamu. Biarkan dia di situ,” ucap serigala kembali.`
+    tempatnya. Lalu, si laki-laki ${userInputs[6]} ular dengan batu. Ternyata benar, ular terlihat tidak bisa melepaskan dirinya. Si laki-laki 
+    hendak melepaskan ular kembali. “Jangan ${userInputs[7]}!” kata serigala. “Ular itu akan memangsamu. Biarkan dia di situ,” ucap serigala kembali.`
 console.log(originalStory);
 
 
