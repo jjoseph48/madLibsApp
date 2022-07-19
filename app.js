@@ -1,3 +1,29 @@
+"use strict";
+
+let numberOfQuestion = 8;
+
+let questionCounter = 0;
+
+let questionArray = ["Masukkan kata kerja :", "Masukkan kata benda :", "Masukkan nama tempat :", 
+    "Masukkan kata benda :", "Masukkan kata kerja :", "Masukkan nama hewan :", "Masukkan nama orang :";
+    "Masukkan kata jabatan :"];
+    
+let userInputs = [];
+for (let i = numberOfQuestion; i >= 0; i--){
+    console.log(
+        questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)
+        );
+        userInputs.push(
+            prompt(
+                questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)
+            )
+        );
+        console.log(userInputs);
+        questionCounter++;
+        numberOfQuestion--;
+}
+        
+
 let originalStory = `Seorang laki-laki melihat ${userInputs[x]} besar yang terjepit batu. Ular itu tidak bisa melepaskan badannya. 
     Laki-laki itu lalu ${userInputs[x]} batunya agar ular bisa melepaskan diri. Setelah batu diangkat, ular Iangsung melilit tubuh 
     laki-laki itu hendak memangsanya. “Tunggu! Mengapa kau lakukan itu? Bukankah aku telah menolongmu?” kata si Laki-laki.
@@ -12,20 +38,6 @@ let originalStory = `Seorang laki-laki melihat ${userInputs[x]} besar yang terje
     tempatnya. Lalu, si laki-laki ${userInputs[x]} ular dengan batu. Ternyata benar, ular terlihat tidak bisa melepaskan dirinya. Si laki-laki 
     hendak melepaskan ular kembali. “Jangan ${userInputs[x]}!” kata serigala. “Ular itu akan memangsamu. Biarkan dia di situ,” ucap serigala kembali.`
 console.log(originalStory);
-
-let userInput = [];
-let numberOfQuestion = 8;
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
