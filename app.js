@@ -4,18 +4,17 @@ let numberOfQuestion = 8;
 
 let questionCounter = 0;
 
-let questionArray = ["Masukkan kata kerja :", "Masukkan kata benda :", "Masukkan nama tempat :", 
-    "Masukkan kata benda :", "Masukkan kata kerja :", "Masukkan nama hewan :", "Masukkan nama orang :";
-    "Masukkan kata jabatan :"];
+let questionArray = ["Masukkan kata kerja :", "Masukkan kata benda :", "Masukkan nama tempat :", "Masukkan kata benda :", "Masukkan kata kerja :", "Masukkan nama hewan :", 
+"Masukkan nama orang :","Masukkan kata jabatan :"];
     
 let userInputs = [];
 for (let i = numberOfQuestion; i >= 0; i--){
     console.log(
-        questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)
+        questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)'
     );
     userInputs.push(
         prompt(
-            questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)
+            questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)'
         )
     );
     console.log(userInputs);
