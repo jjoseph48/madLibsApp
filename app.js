@@ -12,7 +12,7 @@ let userInputs = [];
 for (let i = numberOfQuestion; i >= 0; i--){
     console.log(
         questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)
-        );
+    );
     userInputs.push(
         prompt(
             questionArray[questionCounter] + ' ... You have (${questiotnTotal} questions left)
@@ -23,7 +23,6 @@ for (let i = numberOfQuestion; i >= 0; i--){
     numberOfQuestion--;
 }
         
-
 let originalStory = `Seorang laki-laki melihat ${userInputs[0]} besar yang terjepit batu. Ular itu tidak bisa melepaskan badannya. 
     Laki-laki itu lalu ${userInputs[1]} batunya agar ular bisa melepaskan diri. Setelah batu diangkat, ular Iangsung melilit tubuh 
     laki-laki itu hendak memangsanya. “Tunggu! Mengapa kau lakukan itu? Bukankah aku telah menolongmu?” kata si Laki-laki.
@@ -39,6 +38,13 @@ let originalStory = `Seorang laki-laki melihat ${userInputs[0]} besar yang terje
     hendak melepaskan ular kembali. “Jangan ${userInputs[7]}!” kata serigala. “Ular itu akan memangsamu. Biarkan dia di situ,” ucap serigala kembali.`
 console.log(originalStory);
 
+alert(
+    "All done! Ready for your totally-accurate, not-at-all confusing history of tech??"
+  );
+
+  // Output
+  console.log(originalStory);
+  document.write(originalStory);
 
 /*
 Seorang laki-laki melihat seekor ular besar yang terjepit batu. Ular itu tidak bisa melepaskan badannya. 
