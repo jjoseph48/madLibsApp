@@ -17,17 +17,25 @@ let questionArray = [
     ` ${greetings} kata kerja `,
     ` ${greetings} nama tumbuhan `
 ];
-    
+
+// Array digunakan untuk menyimpan input dari pengguna
 let userInputs = [];
+// Looping dimana tiap loopingnya, pengguna diminta memasuukan kata-kata
 for (let i = numberOfQuestion; i >= 0; i--) {
     console.log(
       questionArray[questionCounter] + `... tersisa (${numberOfQuestion} pertanyaan)`
     );
-    userInputs.push(
-      prompt(
+    
+    // Di bawah ini, user mendapat perintah
+    input = prompt(
         questionArray[questionCounter] + `... tersisa (${numberOfQuestion} pertanyaan)`
       )
-    );
+    
+    // Input user akan dicek, jika null, maka akan dimasukkan kalimat bahwa user tidak memasukkan kata
+    if(input != null)
+        userInputs.push(input);
+    else
+         userInputs.push("User tidak memasukkan apapun);
     console.log(userInputs);
     questionCounter++;
     numberOfQuestion--;
